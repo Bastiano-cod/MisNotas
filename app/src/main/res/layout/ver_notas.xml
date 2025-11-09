@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#1E1E2F">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tus Notas"
+        android:textSize="28sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/fondo_listview"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:elevation="6dp"
+        android:layout_marginBottom="20dp">
+        <ListView
+            android:id="@+id/listViewNotas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#BDBDBD"
+            android:dividerHeight="1dp"
+            android:choiceMode="singleChoice"
+            android:listSelector="@drawable/selector_nota"
+            android:background="@android:color/white"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/EliminarNota"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Eliminar nota"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/boton_nuevo"
+            android:layout_marginEnd="8dp"/>
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/VolverVer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Volver"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/boton_nuevo"
+            android:layout_marginEnd="8dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
